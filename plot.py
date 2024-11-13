@@ -6,7 +6,7 @@ def plot_3d(data, ax, name):
     x = [i[0] for i in data]
     y = [i[1] for i in data]
     z = [i[2] for i in data]
-    ax.plot_trisurf(x, y, z, label=name)
+    ax.plot_trisurf(x, y, z, label=name, alpha=0.7)
 
 def main():
     parser = argparse.ArgumentParser(description='Plot miss rate of different loop orders')
